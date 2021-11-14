@@ -60,6 +60,10 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 else
    TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+   BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+   BOARD_INCLUDE_RECOVERY_DTBO := true
+   BOARD_BOOTIMG_HEADER_VERSION := 1
+   BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
    # whether to use stock kernel (from global_images_V12.0.6.0.QFKMIXM_20210610)
    ifeq ($(FOX_VARIANT),MIUI)
      TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image-stock.gz-dtb
