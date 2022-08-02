@@ -46,7 +46,7 @@
         export FOX_REMOVE_BASH=1
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
    	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1510672800"; # Tue Nov 14 15:20:00 GMT 2017
-	export FOX_USE_SPECIFIC_MAGISK_ZIP="device/xiaomi/raphael/prebuilt/Magisk-v24.3.zip
+	export FOX_USE_SPECIFIC_MAGISK_ZIP="device/xiaomi/raphael/prebuilt/Magisk-v24.3.zip"
         export OF_MAINTAINER="OnettBoots"
         export OF_MAINTAINER_AVATAR="device/xiaomi/raphael/OnettBoots.png"
 
